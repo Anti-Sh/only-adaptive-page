@@ -1,0 +1,159 @@
+/* Глобальные свойства */
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #012B34;
+}
+h1::after,
+li::after{
+    display: block;
+    width: 100%;
+    margin: 80px 0 30px;
+    content: " ";
+    background-color: #e6e6e6;
+    height: 1px;
+}
+li::after{
+    margin: 30px 0;
+}
+li::before{
+    content: "\2573";
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.active::before{
+    transform: rotate(0deg);
+}
+ol{
+    list-style-position: inside;
+}
+li{
+    margin-top: 30xp;
+}
+.active{
+    color: #02818A;
+}
+.hide{
+    display: none;
+}
+body{
+    position: relative;
+    width: 1600px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.page__header{
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 100px;
+}
+li{
+    font-size: 36px;
+    line-height: 120%;
+}
+.item__body{
+    font-size: 20px;
+    line-height: 150%;
+    padding: 30px 0 10px;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        width: 327px;
+    }
+    h1::after{
+        margin: 40px 0 20px;
+    }
+    li::after{
+        margin: 20px 0;
+    }
+    li::before{
+        font-size: 15px;
+    }
+    li{
+        margin-top: 20xp;
+    }
+    .page__header{
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+    li{
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .item__body{
+        font-size: 15px;
+        line-height: 22.5px;
+        padding: 16px 0 0;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    body{
+        width: 688px;
+    }
+    h1::after{
+        margin: 50px 0 24px;
+    }
+    li::after{
+        margin: 24px 0;
+    }
+    li::before{
+        font-size: 15px;
+    }
+    li{
+        margin-top: 20xp;
+    }
+    .page__header{
+        font-size: 42px;
+        line-height: 42px;
+        margin-top: 60px;
+    }
+    li{
+        font-size: 27px;
+        line-height: 32.4px;
+    }
+    .item__body{
+        font-size: 15px;
+        line-height: 22.5px;
+        padding: 16px 0 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px){
+    body{
+        width: 1066px;
+    }
+    h1::after{
+        margin: 56px 0 20px;
+    }
+    li::after{
+        margin: 20px 0;
+    }
+    li::before{
+        font-size: 15px;
+    }
+    li{
+        margin-top: 20xp;
+    }
+    .page__header{
+        font-size: 42px;
+        line-height: 42px;
+        margin-top: 70px;
+    }
+    li{
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .item__body{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 16px 0 4px;
+    }
+}
